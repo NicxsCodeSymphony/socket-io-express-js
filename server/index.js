@@ -18,7 +18,7 @@ const expressServer = app.listen(PORT, () => {
 
 const io = new Server(expressServer, {
     cors: {
-        origin: process.env.NODE_ENV === "production" ? false : ["http://localhost:5500", "http://127.0.0.1:5500"]
+        origin: process.env.NODE_ENV === "production" ? false : [ "https://socket-io-chat-app-1-xakp.onrender.com", "http://localhost:5500", "http://127.0.0.1:5500"]
     }
 })
 
