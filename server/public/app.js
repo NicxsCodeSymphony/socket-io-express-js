@@ -1,5 +1,5 @@
 
-const socket = io('ws://localhost:3500')
+const socket = io('https://socket-io-chat-app-1-xakp.onrender.com')
 
 const activity = document.querySelector('.activity')
 const msgInput = document.querySelector('input')
